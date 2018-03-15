@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description">
+    <meta name="author" content="author">
+    <!-- also suggests consistent color theme -->
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.1/spectre.min.css">
+    <style>
+        body {
+            /*
+      font-family: 'Open Sans', sans-serif;
+      
+            background: #e7e9ed;
+
+            color: #454d5d;
+            */
+            font-size: 24pt;
+            padding: 4em;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='quote'>
+    </div>
+    <br>
+    <div id='author'>
+    </div>
+    <br>
+    <button onclick="getQuote()">Click me</button>
+    <script src='quotes.js'></script>
+    <script>
+        function getQuote() {
+            let arr = window.quotes.split('*');
+            let numquotes = (arr.length - 1) / 2;
+            let i = 2 * Math.floor(Math.random() * numquotes) + 1;
+            document.getElementById('quote').innerHTML = arr[i];
+            document.getElementById('author').innerHTML = arr[i + 1];
+        }
+        // quotes preprocessed by replacing all "..." with *...*
+        window.onload = getQuote;
+    </script>
+</body>
