@@ -5,34 +5,45 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="description">
-    <meta name="author" content="author">
-    <!-- also suggests consistent color theme -->
+    <!-- try commenting out to see what happens -->
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.1/spectre.min.css">
     <style>
         body {
-            /*
-      font-family: 'Open Sans', sans-serif;
-      
-            background: #e7e9ed;
-
-            color: #454d5d;
-            */
             font-size: 24pt;
-            padding: 4em;
-            background: black;
+            padding: 2em;
+            color: white;
+            /*** background from https://uigradients.com/#Celestial ***/
+            background: #C33764;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1D2671, #C33764);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        button {
+            width:2em;
+			height: 2em;
+            color: white;
+            align-content: center;
+            background-color: transparent;
+            border-radius: 50%;
+            border-color: white;
         }
     </style>
 </head>
 
 <body>
+    <div>
+        <button onclick="getQuote()">></button>
+    </div>
+    <br>
     <div id='quote'>
     </div>
     <br>
     <div id='author'>
     </div>
-    <br>
-    <button onclick="getQuote()">Click me</button>
+
+
     <script src='quotes.js'></script>
     <script>
         function getQuote() {
