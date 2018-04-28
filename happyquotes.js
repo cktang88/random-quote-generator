@@ -1,4 +1,4 @@
-
+/* forgot where this was from... */
 window.quotes = `*Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.*
 Buddha
 *Happiness is the art of never holding in your mind the memory of any unpleasant thing that has passed.*
