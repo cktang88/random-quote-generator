@@ -4,7 +4,7 @@ Original copy-paste from http://www.junauza.com/2010/12/top-50-programming-quote
  
  // have to use backticks to deal with newlines
  // when preprocessing replace all quotation marks (", ”) - there are three types - with *
-window.quotes = `
+const quotes = `
 50. *Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to build bigger and better idiots. So far, the universe is winning.*
 - Rick Cook
 

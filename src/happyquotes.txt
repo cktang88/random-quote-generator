@@ -1,5 +1,6 @@
 /* forgot where this was from... */
-window.quotes = `*Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.*
+/*
+const quotes = `*Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.*
 Buddha
 *Happiness is the art of never holding in your mind the memory of any unpleasant thing that has passed.*
 Unknown
@@ -213,3 +214,4 @@ Morris West
 Milton Erickson
 *Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.*
 Mark Twain`
+*/
